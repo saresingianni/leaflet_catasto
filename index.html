@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>leaflet-testTrasparanza01</title>
+  <title>Catasto Fabbricati Trasparenza Mappe</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -367,8 +367,8 @@ L.TileLayer.Catasto = L.TileLayer.extend({
     });
 
     // Add remote KMZ files as layers (NB if they are 3rd-party servers, they MUST have CORS enabled)
-   //kmzParser.load('regions.kmz');
-   var ibrido = L.layerGroup([L.tileLayer.Catasto().addTo(map)]);
+    //kmzParser.load('regions.kmz');
+    var ibrido = L.layerGroup([L.tileLayer.Catasto().addTo(map)]);
       
     var baseLayers2 = {};
     var overlays = {
@@ -377,37 +377,38 @@ L.TileLayer.Catasto = L.TileLayer.extend({
     var controlLayers2= L.control.layers(baseLayers2, overlays).addTo(map);
 
     L.Control.Layers.include({
-  getOverlays: function() {
-    // create hash to hold all layers
-    var control, layers;
-    layers = {};
-    control = this;
+        getOverlays: function() {
+        // create hash to hold all layers
+        var control, layers;
+        layers = {};
+        control = this;
 
-    // loop thru all layers in control
-    control._layers.forEach(function(obj) {
-      var layerName;
+        // loop thru all layers in control
+        control._layers.forEach(function(obj) {
+        var layerName;
 
-      // check if layer is an overlay
-      if (obj.overlay) {
+        // check if layer is an overlay
+        if (obj.overlay) {
         // get name of overlay
         layerName = obj.name;
         // store whether it's present on the map or not
         return layers[layerName] = control._map.hasLayer(obj.layer);
-      }
+        }
+      });
+
+      return layers;
+    }
+    
     });
 
-    return layers;
-  }
-});
 
 
 
-
-var keyControlLayers2 = Object.keys(controlLayers2.getOverlays())[0];
-var valueControlLayers2 = controlLayers2.getOverlays()[keyControlLayers2];
+    var keyControlLayers2 = Object.keys(controlLayers2.getOverlays())[0];
+    var valueControlLayers2 = controlLayers2.getOverlays()[keyControlLayers2];
      
- console.log("key = ", keyControlLayers2) // bar
- console.log("value = ", valueControlLayers2) // baz
+    //console.log("key = ", keyControlLayers2) // bar
+    //console.log("value = ", valueControlLayers2) // baz
 
 
     //L.control.layers(baseMaps, overlayMaps).addTo(map);
@@ -441,14 +442,14 @@ var valueControlLayers2 = controlLayers2.getOverlays()[keyControlLayers2];
     //lat=37.327193489720905
  
     function onMapClick(e) {
-      console.log(controlLayers2.getOverlays());
+     //console.log(controlLayers2.getOverlays());
       var keyControlLayers2 = Object.keys(controlLayers2.getOverlays())[0];
       var valueControlLayers2 = controlLayers2.getOverlays()[keyControlLayers2];
       console.log("key = ", keyControlLayers2) // bar
-      console.log("value = ", valueControlLayers2) // baz
+     //console.log("value = ", valueControlLayers2) // baz
       
       
-      console.log("keyControlBaseOpacityy = ", controlBaseOpacity) // bar
+     //console.log("keyControlBaseOpacityy = ", controlBaseOpacity) // bar
       
       
       if(valueControlLayers2){
@@ -586,13 +587,15 @@ var valueControlLayers2 = controlLayers2.getOverlays()[keyControlLayers2];
             //console.log("ccancello fine "+fine);
             //fine="";
             fine = fine.concat("<hr>")
-                      .concat("Zoom impostato : "+ valoreZoom)
+                      .concat("Lo Zoom è su  : "+ valoreZoom)
                       .concat("<hr>")
-                      .concat("Vis.Fabbricati liv. 17 o 18")
+                      .concat("Per Fabbricati")
                       .concat("<br>")
+                      .concat("Livello  17 o 18")
+                      .concat("<br>")                     
                       .concat("Tasti + o -")
                       .concat("<br>")
-                      .concat("Posizionti alto a sinistra")
+                      .concat("in alto a sinistra")
 
             }
             fine=fine.concat("<hr>")
