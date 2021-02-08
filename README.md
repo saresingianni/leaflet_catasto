@@ -6,7 +6,7 @@ Esempio con di visualizzazione mappe dal Catasto delle Agenzie delle Entrate, Sa
 ### Demo 
 * [demo](https://saresingianni.github.io/leaflet_catasto/) - Pagina index.html
 
-#
+![esempio immagine](/image/padova.png)
 
 
 ## Per iniziare
