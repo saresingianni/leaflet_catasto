@@ -60,11 +60,7 @@ style>
 ```
 
 ```
-```
 
-
-```
-```
 proj4.defs("WGS84", "+proj=longlat +ellps=WGS84 +datum=WGS84 +units=degrees");
 proj4.defs("EPSG:6706", "+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs");
 Chiamata alle coordinate per il catasto
@@ -75,6 +71,9 @@ var opts = {
         markerZoomAnimation: false,
         zoomControl: false,
       }, le opzioni per i vari layer
+```
+```
+```
 ```
 End with an example of getting some data out of the system or using it for a little demo
 
