@@ -14,7 +14,7 @@ Esempio con di visualizzazione mappe dal Catasto delle Agenzie delle Entrate, Sa
 - questo è il link di riferimento https://leafletjs.com/download.html
 Vi elenci qui le libreire che ho utilizzato nel file demo index.html
 * [Lealeft](https://leafletjs.com/download.html) - Link per il donwload della libreria principaòe
-* [Leaflet-Pegman](ttps://unpkg.com/leaflet-pegman@0.0.8/leaflet-pegman.css") - Link Dipendenze per Open Steet
+* [Leaflet-Pegman](https://unpkg.com/leaflet-pegman@0.0.8/leaflet-pegman.css) - Link Dipendenze per Open Steet
 * [jszip](https://unpkg.com/jszip@3.1.5/dist/jszip.min.js) - Link per utilizzo jszip
 * [json](https://unpkg.com/togeojson@0.16.0/togeojson.js) - Link per utilizzo json
 * [json](https://unpkg.com/geojson-vt@3.0.0/geojson-vt.js) - Link per utilizzo geojson
@@ -28,12 +28,8 @@ Vi elenci qui le libreire che ho utilizzato nel file demo index.html
 
 
 ## Siti per la documentazione dove ho preso spunto
-
-https://medium.com/@p.mistrangelo/visualizzare-le-mappe-del-catasto-terreni-con-google-maps-473a44872962  
-
 * [Paolo Mistrangelo](https://medium.com/@p.mistrangelo/visualizzare-le-mappe-del-catasto-terreni-con-google-maps-473a44872962 ) -Paolo Mistrangelo Visualizzare le mappe del catasto terreni con Google Maps
-
-* [Andrea Borroso](https://medium.com/tantotanto/le-mappa-castali-diventano-finalmente-utilizzabili-821db2f845332 ) Andrea Borroso
+* [Andrea Borroso](https://medium.com/tantotanto/le-mappa-castali-diventano-finalmente-utilizzabili-821db2f84533) Andrea Borroso
 Le mappe catastali dell’Agenzia delle Entrate diventano finalmente utilizzabili
 
 
