@@ -148,8 +148,38 @@ L.TileLayer.Catasto = L.TileLayer.extend({
         /* utilizzo fecth per reuperare le chiamate presso l'Agenxia delle entrate
 
 ```
-
-
+```
+    map.on('click', onMapClick);
+    //L.tileLayer.Catasto().addTo(map);
+  function bbox(x,y,z) {
+    //console.log("sono qui x "+x);
+    //console.log("sono qui y "+y);
+    //console.log("sono qui z "+z);
+    bl_lng=tile2long(x,z);
+		tr_lng=tile2long((x+1),z);
+		bl_lat=tile2lat(y+1,z);
+		tr_lat=tile2lat((y),z);
+		bl=proj4("WGS84","EPSG:6706",[bl_lng,bl_lat]);
+		tr=proj4("WGS84","EPSG:6706",[tr_lng,tr_lat]);
+    //console.log("sono qui bl[1] "+bl[1]);
+    //console.log("sono qui bl[0] "+bl[0]);
+    //console.log("sono qui bl[0] "+bl[0]);
+    return bl[1]+","+bl[0]+","+tr[1]+","+tr[0];
+	}
+	function tile2long(x,z) {
+		return (x/Math.pow(2,z)*360-180);
+	  }
+	function tile2lat(y,z) {
+    	var n=Math.PI-2*Math.PI*y/Math.pow(2,z);
+    	return (180/Math.PI*Math.atan(0.5*(Math.exp(n)-Math.exp(-n))));
+    }
+  function Ibrido(tipo, acceso) {
+      this.tipo = tipo;
+      this.acceso = acceso;
+   }
+    
+```
+``` parte finale per i calcol delle coordinate
 
 End with an example of getting some data out of the system or using it for a little demo
 
