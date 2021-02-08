@@ -98,10 +98,10 @@ L.TileLayer.Catasto = L.TileLayer.extend({
     baseLayers["Mappa Catastale"] = L.tileLayer.Catasto();
    //baseLayers["Posizione Attuale"] = map.locate({setView: true, maxZoom: 16});
    //new L.tileLayer(opts.catastoLayer.url(opts.map.center[0], opts.map.center[1]), opts.catastoLayer.options);
-    baseLayers["ImmagineSatellitare"] = new L.TileLayer(opts.satelliteLayer.url, opts.satelliteLayer.options);
- 
+    baseLayers["ImmagineSatellitare"] = new L.TileLayer(opts.satelliteLayer.url, opts.satelliteLayer.options)
+    
     var controlZoom = new L.Control.Zoom(opts.zoomControl); costruzione tabella menu chekpoint
-  var baseLayers2 = {};
+    var baseLayers2 = {};
     var overlays = {
     "Sovrapposizione Catasto": ibrido
     };
@@ -131,7 +131,7 @@ L.TileLayer.Catasto = L.TileLayer.extend({
     }
     
     }); cattura degli eventi```
-
+...
 ```
 End with an example of getting some data out of the system or using it for a little demo
 
