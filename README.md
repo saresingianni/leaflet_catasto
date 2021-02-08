@@ -37,26 +37,39 @@ Le mappe catastali dell’Agenzia delle Entrate diventano finalmente utilizzabil
 
 ### Risorse su Git Hub
 
-What things you need to install the software and how to install them
+* [Leaflet](https://github.com/Leaflet/Leaflet) Risorse Leaflet su Git Hub
+
+* [Leaflet Opacità] (https://github.com/dayjournal/Leaflet.Control.Opacity) Risorse Leaflet per controllo sulla Opacità su Git Hub
+* [Leaflet posizione] (https://github.com/domoritz/leaflet-locatecontrol) Risorse Leaflet per controllo della posizione
+
+* [Leaflet posizione] )https://github.com/Raruto/leaflet-transparency Risorse Leaflet per la trasparenza
+
+### Punti Salienti
 
 ```
-Give examples
+style>
+    html,
+    body,
+    .map {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style> vieme inserita a tutto schermo
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+proj4.defs("WGS84", "+proj=longlat +ellps=WGS84 +datum=WGS84 +units=degrees");
+ proj4.defs("EPSG:6706", "+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs");
+ Chiamata alle coordinate per il catasto
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+var opts = {
+      map: {                    //45.398358 11.876553﻿
+        center: [45.398358, 11.876553],//45°24′23″N 11°52′40″E (Mappa)
+        zoom:17,                //45°24′04″N 11°56′32″E (Mappa)
+        markerZoomAnimation: false,
+        zoomControl: false,
+      }, le opzioni per i vari layer
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
