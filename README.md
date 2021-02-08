@@ -72,6 +72,7 @@ var opts = {
         zoomControl: false,
       }, le opzioni per i vari layer
 ```
+```
 L.TileLayer.Catasto = L.TileLayer.extend({
     getTileUrl: function(coords) {
       //   console.log("coords.x "+coords.x);
