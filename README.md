@@ -32,7 +32,7 @@ Vi elenci qui le libreire che ho utilizzato nel file demo index.html
 * [Andrea Borroso](https://medium.com/tantotanto/le-mappa-castali-diventano-finalmente-utilizzabili-821db2f84533) Andrea Borroso
 Le mappe catastali dell’Agenzia delle Entrate diventano finalmente utilizzabil
 *[Agenzia delle Entrate](https://geoportale.cartografia.agenziaentrate.gov.it/age-inspire/srv/ita/catalog.search#/home) Agenzia delle Entrate
-*[INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/ INSPIRE Geoportal
+*[INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/) INSPIRE Geoportal
 *[INSPIRE Geoportal](https://geodati.gov.it/geoportale/) Repertorio Nazionale dei Dati Nazionale
 
 ### Risorse su Git Hub
