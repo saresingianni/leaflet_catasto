@@ -72,6 +72,24 @@ var opts = {
         zoomControl: false,
       }, le opzioni per i vari layer
 ```
+L.TileLayer.Catasto = L.TileLayer.extend({
+    getTileUrl: function(coords) {
+      //   console.log("coords.x "+coords.x);
+      //   console.log("coords.y "+coords.y);
+      //   console.log("coords.z "+coords.z);
+         
+         return "https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php?language=ita&service=WMS&version=1.3.0&request=GetMap&bbox="+bbox(coords.x,coords.y,coords.z)+"&crs=EPSG:6706&width=256&height=256&layers=province,CP.CadastralZoning,acque,CP.CadastralParcel,fabbricati,codice_plla,simbolo_graffa&styles=default&format=image/png&DPI=96&map_resolution=96&format_options=dpi:96&transparent=true"
+        },
+      getAttribution: function() {
+          return "<a href='https://www.agenziaentrate.gov.it/portale/it/web/guest/schede/fabbricatiterreni/consultazione-cartografia-catastale/servizio-consultazione-cartografia'>Agenzie delle Entrate</a>"
+      }
+    });
+        L.tileLayer.Catasto = function() {
+  
+       return new L.TileLayer.Catasto();
+    }
+    chiamata funzioni per agenzia delle entrate
+
 ```
 ```
 ```
