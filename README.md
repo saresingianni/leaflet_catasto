@@ -6,7 +6,7 @@ Esempio con di visualizzazione mappe dal Catasto delle Agenzie delle Entrate, Sa
 ### Demo 
 * [demo](https://saresingianni.github.io/leaflet_catasto/) - Pagina index.html
 
-
+### Prato della Valle Padova
 ![alt text immagine Padova Prato della Valle](https://github.com/saresingianni/leaflet_catasto/blob/main/img/padova.jpg?raw=true)
 
 
@@ -181,7 +181,3 @@ L.TileLayer.Catasto = L.TileLayer.extend({
       this.acceso = acceso;
    }parte finale per i calcol delle coordinate
     
-```
-``` 
-
-
