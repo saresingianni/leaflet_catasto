@@ -128,9 +128,29 @@ L.TileLayer.Catasto = L.TileLayer.extend({
       return layers;
     }
     
-    }); cattura degli eventi```
+    }); cattura degli eventi
 ```
 ```
+  //fetch dei risultati di ritorno
+      fetch(testUrl)
+        .then(res => res.json())
+        .then((out) => {
+        //console.log('Checkout this JSON! ', out);
+        allegato=out.ALLEGATO;
+        codice_comune=out.COD_COMUNE;
+        denominazione=out.DENOM;
+        foglio=out.FOGLIO
+        num_particella=out.NUM_PART;
+        sezione=out.SEZIONE;
+        sigla_provincia=out.SIGLA_PROV;
+        sviluppo=out.SVILUPPO;
+        tipologia=out.TIPOLOGIA;
+        /* utilizzo fecth per reuperare le chiamate presso l'Agenxia delle entrate
+
+```
+
+
+
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
