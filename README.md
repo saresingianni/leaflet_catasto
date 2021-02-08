@@ -58,9 +58,7 @@ style>
     }
   </style> viene inserita la mappa a tutto schermo
 ```
-
 ```
-
 proj4.defs("WGS84", "+proj=longlat +ellps=WGS84 +datum=WGS84 +units=degrees");
 proj4.defs("EPSG:6706", "+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs");
 Chiamata alle coordinate per il catasto
@@ -90,7 +88,7 @@ L.TileLayer.Catasto = L.TileLayer.extend({
        return new L.TileLayer.Catasto();
     }
     chiamata funzioni per agenzia delle entrate
-...
+```
 ```
    var baseLayers = {};
     baseLayers["MappaToponomastica"] = new L.TileLayer(opts.otmLayer.url, opts.otmLayer.options);
@@ -131,7 +129,7 @@ L.TileLayer.Catasto = L.TileLayer.extend({
     }
     
     }); cattura degli eventi```
-...
+```
 ```
 End with an example of getting some data out of the system or using it for a little demo
 
