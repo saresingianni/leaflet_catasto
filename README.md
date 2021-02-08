@@ -92,7 +92,46 @@ L.TileLayer.Catasto = L.TileLayer.extend({
     chiamata funzioni per agenzia delle entrate
 
 ```
-```
+   var baseLayers = {};
+    baseLayers["MappaToponomastica"] = new L.TileLayer(opts.otmLayer.url, opts.otmLayer.options);
+    baseLayers["MappaStradale"] = new L.TileLayer(opts.osmLayer.url, opts.osmLayer.options);
+    baseLayers["Mappa Catastale"] = L.tileLayer.Catasto();
+   //baseLayers["Posizione Attuale"] = map.locate({setView: true, maxZoom: 16});
+   //new L.tileLayer(opts.catastoLayer.url(opts.map.center[0], opts.map.center[1]), opts.catastoLayer.options);
+    baseLayers["ImmagineSatellitare"] = new L.TileLayer(opts.satelliteLayer.url, opts.satelliteLayer.options);
+ 
+    var controlZoom = new L.Control.Zoom(opts.zoomControl); costruzione tabella menu chekpoint
+  var baseLayers2 = {};
+    var overlays = {
+    "Sovrapposizione Catasto": ibrido
+    };
+    var controlLayers2= L.control.layers(baseLayers2, overlays).addTo(map);
+
+    L.Control.Layers.include({
+        getOverlays: function() {
+        // create hash to hold all layers
+        var control, layers;
+        layers = {};
+        control = this;
+
+        // loop thru all layers in control
+        control._layers.forEach(function(obj) {
+        var layerName;
+
+        // check if layer is an overlay
+        if (obj.overlay) {
+        // get name of overlay
+        layerName = obj.name;
+        // store whether it's present on the map or not
+        return layers[layerName] = control._map.hasLayer(obj.layer);
+        }
+      });
+
+      return layers;
+    }
+    
+    }); cattura degli eventi```
+
 ```
 End with an example of getting some data out of the system or using it for a little demo
 
