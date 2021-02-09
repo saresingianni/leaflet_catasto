@@ -16,7 +16,7 @@ Esempio con di visualizzazione mappe dal Catasto delle Agenzie delle Entrate, Sa
 - a JavaScript library for interactive maps
 - questo è il link di riferimento https://leafletjs.com/download.html
 Vi elenci qui le libreire che ho utilizzato nel file demo index.html
-* [Lealeft](https://leafletjs.com/download.html) - Link per il donwload della libreria principaòe
+* [Lealeft](https://leafletjs.com/download.html) - Link per il donwload della libreria principale 
 * [Leaflet-Pegman](https://unpkg.com/leaflet-pegman@0.0.8/leaflet-pegman.css) - Link Dipendenze per Open Steet
 * [jszip](https://unpkg.com/jszip@3.1.5/dist/jszip.min.js) - Link per utilizzo jszip
 * [json](https://unpkg.com/togeojson@0.16.0/togeojson.js) - Link per utilizzo json
