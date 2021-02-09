@@ -45,7 +45,7 @@ Le mappe catastali dell’Agenzia delle Entrate diventano finalmente utilizzabil
 * [Leaflet Opacità](https://github.com/dayjournal/Leaflet.Control.Opacity) Risorse Leaflet per controllo sulla Opacità su Git Hub
 * [Leaflet posizione](https://github.com/domoritz/leaflet-locatecontrol) Risorse Leaflet per controllo della posizione
 
-* [Leaflet posizione](https://github.com/Raruto/leaflet-transparency) Risorse Leaflet per la trasparenza
+* [Leaflet trasparenza](https://github.com/Raruto/leaflet-transparency) Risorse Leaflet per la trasparenza
 
 ### Punti Salienti
 
