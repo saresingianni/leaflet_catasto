@@ -32,7 +32,7 @@ Vi elenci qui le libreire che ho utilizzato nel file demo index.html
 
 ## Siti per la documentazione dove ho preso spunto
 * [Paolo Mistrangelo](https://medium.com/@p.mistrangelo/visualizzare-le-mappe-del-catasto-terreni-con-google-maps-473a44872962 ) -Paolo Mistrangelo Visualizzare le mappe del catasto terreni con Google Maps
-* [Andrea Borroso](https://medium.com/tantotanto/le-mappa-castali-diventano-finalmente-utilizzabili-821db2f84533) Andrea Borroso
+* [Andrea Borruso](https://medium.com/tantotanto/le-mappa-castali-diventano-finalmente-utilizzabili-821db2f84533) Andrea Borruso
 Le mappe catastali dell’Agenzia delle Entrate diventano finalmente utilizzabil
 * [Agenzia delle Entrate](https://geoportale.cartografia.agenziaentrate.gov.it/age-inspire/srv/ita/catalog.search#/home) Agenzia delle Entrate
 * [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/) INSPIRE Geoportal
